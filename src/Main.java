@@ -1,14 +1,11 @@
-import Data.Master_Rooms;
-import Data.RealEstate;
-import java.util.ArrayList;
-import java.util.List;
+import Data.*;
 import java.util.Scanner;
 
 public class Main {
-    static int Addnew;
+    static int maxno = 100000000;
     public static Scanner in = new Scanner(System.in);
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         System.out.println("WELCOME TO THIS APP");
         System.out.println("----------------------------------------------------------------");
         System.out.println("CHOOSE ONE OF THE OPTIONS : ");
@@ -18,38 +15,25 @@ public class Main {
         int Options = in.nextInt();
         switch (Options) {
             case 1: {
-                RealEstate PropertyID [] = new RealEstate[Addnew];
-                for (int i = 100; i < Addnew; Addnew++) {
-                    PropertyID [Addnew] = new RealEstate(Addnew);
-                }
-               // int recount;
-              //  System.out.println("How many Properties u wanna add ?");
-               // recount = in.nextInt();
-            /*   Master_Rooms[] master = new Master_Rooms[recount];
-                for (int i = 0; i < recount; i++) {
-                    master[i] = new Master_Rooms(i);
-                }*/
-               // PropertyID = new RealEstate[ItemsCount+1];
-
-
-                }
+                RealEstate RealEstate[] = new RealEstate[10000];
+                int i = 1;
+                RealEstate[i] = new RealEstate(i);
+                i++;
+                int options = in.nextInt();
+                break;
             }
-      /*  for (int i = 0; i < lo; i++) {
-            System.out.println("ENTER UNIQUE PROPERTY ID");
-
-            Master_Rooms Unique = new Master_Rooms();
-            RealEstate r1 = new RealEstate();
-            r1.AddProperty();
-        }
-        break;}
-    case 2:{
-        RealEstate r1 = new RealEstate();
-        r1.EditProperty();
-        break;}
-    case 3:{
-        RealEstate r1 = new RealEstate();
-        r1.DeleteProperty();}
-    default:{
-        throw new IllegalStateException("Unexpected value: " + Options);}*/
+            /*case 2: {
+                this.i;
+                break;
+            }
+            case 3: {
+                RealEstate r1 = new RealEstate();
+                r1.DeleteProperty();
+            }
+            default: {
+                throw new IllegalStateException("Unexpected value: " + Options);
+            }
+        }*/
         }
     }
+}
